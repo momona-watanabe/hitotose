@@ -16,6 +16,15 @@ ul {
   padding-inline-start: 0px;
 }
 
+a {
+  text-decoration: none;
+}
+
+p {
+  letter-spacing: 1.7px;
+}
+
+
 $font_black:#190e08;
 
 $brown:#723517;
@@ -26,14 +35,14 @@ $navy:#383c44;
 
 $yellow:#e2bd6a;
 
+$white:#fff;
 
 
 
 
 
 
-
-
+/*!header*/
 header {
   height: 115px;
   width: 100%;
@@ -59,12 +68,20 @@ header {
       z-index: 100;
       ul {
         writing-mode: vertical-lr;
-        li{
-          margin: 0px 80px;
-        }
-        a,p{
-          color: white;
-        }
+      }
+      li{
+        margin: 0px 80px;
+      }
+      a {
+        display: inline-block;
+      }
+      p{
+        color: $white;
+      }
+      span {
+        display: block;
+        border: .5px solid $white;
+        margin-left: 6px;
       }
     }//header_menu
   
@@ -73,6 +90,7 @@ header {
 
 
 
+/*!firstview*/
 #firstview {
   width: 100%;
   height: auto;
@@ -86,3 +104,57 @@ header {
     margin: -65px 0 0 -65px;
   }
 }
+
+
+/*!concept*/
+#concept {
+  width: 100%;
+  padding: 100px;
+
+  .contents_block {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+
+  .concept_list:nth-child(odd) .concept_img{
+    justify-content: right;
+  }
+  .concept_list:nth-child(even) .concept_img{
+    justify-content: left;
+  }
+  .concept_list:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .concept_list {
+    margin-bottom: 140px;
+    .concept_letter{
+      color: $font_black;
+      writing-mode: vertical-rl;
+      margin: 0 auto;
+      line-height: 48px;
+    }
+    .letter1 {
+      margin: 25px auto 55px auto;
+    }
+    .letter2 {
+      padding-right: 100px;
+    }
+    span {
+      display: block;
+      width: 50px;
+    }
+    .concept_img {
+      display: flex;
+    }
+    img{
+      height: 315px;
+      width: auto;
+    }
+    .concept_img_left {
+      margin-right: 25px;
+    }
+  }//concept_list
+}//concept
+
