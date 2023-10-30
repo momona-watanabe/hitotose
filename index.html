@@ -6,11 +6,23 @@
   <title>旅館ひととせ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="./stylesheets/style.css" />
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'gvx0yur',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>
 <body>
   
 
-   <div class="wrapper">
+  <div class="wrapper">
+
+
     <div class="wrap_inner">
 
       <header>
@@ -147,10 +159,82 @@
       </div><!--/concept-->
 
 
+      <div id="information">
+        <div class="contents_inner">
+          <div class="contents_block">
+            <div class="info_title">
+              <img src="./images/info_illust1.png">
+              <h1>ひととせのおもてなし</h1>
+              <img src="./images/info_illust2.png">
+            </div><!--/info_title-->
+
+            <div class="info_list">
+              <div class="info_text_block">
+                <img src="./images/info_illust3.png" class="info_text_icon">
+                <h2>料理</h2>
+                <p>
+                  旬の食材や地元長野県産の新鮮な食材を使用
+                  <br>
+                  季節に合わせた特別な料理をご堪能ください。
+                </p>
+                <a href="#">
+                  <p>季節の料理・プラン →</p>
+                </a>
+              </div><!--/info_text_block-->
+              <div class="info_img_block">
+                <img src="./images/information1.jpg" alt="">
+              </div><!--/info_img_block-->
+            </div><!--/info_list-->
+
+            <div class="info_list">
+              <div class="info_text_block">
+                <img src="./images/info_illust4.png" class="info_text_icon">
+                <h2>客室</h2>
+                <p>
+                  木の温もりを感じる客室、露天風呂付き客室
+                  <br>
+                  記念日にお勧めの特別室をお選びいただけます。
+                  <br>
+                  庭園からは季節の花々をご覧いただけます。
+                </p>
+                <a href="#">
+                  <p>客室一覧 →</p>
+                </a>
+              </div><!--/info_text_block-->
+              <div class="info_img_block">
+                <img src="./images/information2.jpg" alt="">
+              </div><!--/info_img_block-->
+            </div><!--/info_list-->
+
+            <div class="info_list">
+              <div class="info_text_block">
+                <img src="./images/info_illust5.png" class="info_text_icon">
+                <h2>温泉</h2>
+                <p>
+                  花見 新録 紅葉 雪見と、四季折々の景色を
+                  <br>
+                  眺めながらゆったりと湯浴みを楽しめます。
+                </p>
+                <a href="#">
+                  <p>露天風呂・貸し切り風呂 →</p>
+                </a>
+              </div><!--/info_text_block-->
+              <div class="info_img_block">
+                <img src="./images/information3.jpg" alt="">
+              </div><!--/info_img_block-->
+            </div><!--/info_list-->
+
+
+          </div><!--/contents_block-->
+        </div><!--/contents_inner-->
+      </div><!--/information-->
+
 
 
     </div><!--/wrap_inner-->
   </div><!--/wrapper-->
+
+
 
 
 </body>
