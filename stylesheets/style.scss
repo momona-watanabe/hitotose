@@ -3,8 +3,10 @@
 /*!共通*/
 
 body {
-  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  font-family: 'fot-tsukuaoldmin-pr6n','游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',sans-serif;
   font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
 }
 
 ul {
@@ -158,3 +160,39 @@ header {
   }//concept_list
 }//concept
 
+
+
+
+#information {
+  .info_title {
+    color: $font_black;
+    display: flex;
+    justify-content: center;
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 1.5px;
+    }
+    img {
+      width: 215px;
+      height: auto;
+      margin: 0 20px
+    }
+  }
+
+  .info_list {
+    display: flex;
+    .info_text_block,.info_img_block {
+      width: 50%;
+    }
+    .info_text_icon {
+      width: 70px;
+      height: auto;
+    }
+  }
+
+  .info_list:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+}//information
