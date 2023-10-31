@@ -168,8 +168,9 @@ header {
     color: $font_black;
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
     h1 {
-      font-size: 30px;
+      font-size: 32px;
       font-weight: 400;
       letter-spacing: 1.5px;
     }
@@ -182,17 +183,50 @@ header {
 
   .info_list {
     display: flex;
+    align-items: center;
+    h2 {
+      font-size: 32px;
+      letter-spacing: 1.5px;
+      font-weight: 500;
+      margin-bottom: 40px;
+    }
+    p {
+      line-height: 36px;
+      margin-bottom: 40px;
+    }
     .info_text_block,.info_img_block {
       width: 50%;
+      text-align: center;
     }
     .info_text_icon {
       width: 70px;
       height: auto;
+      margin: 20px auto;
     }
+    
   }
 
-  .info_list:nth-child(odd) {
+  .info_list:nth-child(2) {
+    background-color: $brown;
+    color: $white;
+    a {
+      color: $yellow;
+    }
+  }
+  .info_list:nth-child(3) {
     flex-direction: row-reverse;
+    background-color: $beige;
+    color: $font_black;
+    a {
+      color: $navy;
+    }
+  }
+  .info_list:nth-child(4) {
+    background-color: $navy;
+    color: $white;
+    a {
+      color: $yellow;
+    }
   }
 
 }//information
