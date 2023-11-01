@@ -189,4 +189,36 @@ header .header_inner .header_menu span {
 }
 #information .info_list:nth-child(4) a {
   color: #e2bd6a;
+}
+
+#contact {
+  position: relative;
+}
+#contact .contact_background {
+  width: 100%;
+  height: 900px;
+}
+#contact .contact_message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -140px;
+  margin-top: -280px;
+  text-align: center;
+}
+#contact .contact_message img {
+  width: 105px;
+  height: auto;
+  margin: 0 auto;
+}
+#contact .contact_message h3 {
+  font-size: 20px;
+  letter-spacing: 1.9px;
+  margin: 50px auto;
+  color: #190e08;
+}
+#contact .contact_message p {
+  color: #190e08;
+  line-height: 36px;
+  margin-bottom: 36px;
 }/*# sourceMappingURL=style.css.map */
