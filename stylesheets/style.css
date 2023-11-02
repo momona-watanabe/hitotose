@@ -135,7 +135,7 @@ header .header_inner .header_menu span {
   justify-content: center;
   margin-bottom: 70px;
 }
-#information .info_title h1 {
+#information .info_title h2 {
   font-size: 32px;
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -149,7 +149,7 @@ header .header_inner .header_menu span {
   display: flex;
   align-items: center;
 }
-#information .info_list h2 {
+#information .info_list h3 {
   font-size: 32px;
   letter-spacing: 1.5px;
   font-weight: 500;
@@ -211,7 +211,7 @@ header .header_inner .header_menu span {
   height: auto;
   margin: 0 auto;
 }
-#contact .contact_message h3 {
+#contact .contact_message h4 {
   font-size: 20px;
   letter-spacing: 1.9px;
   margin: 50px auto;
@@ -221,4 +221,36 @@ header .header_inner .header_menu span {
   color: #190e08;
   line-height: 36px;
   margin-bottom: 36px;
+}
+#contact .contact_btn {
+  border: 2px solid #e2bd6a;
+  padding: 3px;
+  width: 230px;
+  margin: 0 auto;
+  display: block;
+}
+#contact .contact_btn p {
+  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 38px;
+  color: #723517;
+  border: 1px solid #e2bd6a;
+}
+
+.footer {
+  height: 300px;
+  width: 100%;
+  background-color: #723517;
+}
+.footer_inner {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+.footer_logo {
+  width: 90px;
+  height: auto;
+}
+.footer_list {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

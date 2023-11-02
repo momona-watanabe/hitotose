@@ -169,7 +169,7 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
-    h1 {
+    h2 {
       font-size: 32px;
       font-weight: 400;
       letter-spacing: 1.5px;
@@ -184,7 +184,7 @@ header {
   .info_list {
     display: flex;
     align-items: center;
-    h2 {
+    h3 {
       font-size: 32px;
       letter-spacing: 1.5px;
       font-weight: 500;
@@ -252,7 +252,7 @@ header {
       height: auto;
       margin: 0 auto;
     }
-    h3 {
+    h4 {
       font-size: 20px;
       letter-spacing: 1.9px;
       margin: 50px auto;
@@ -264,6 +264,42 @@ header {
       margin-bottom: 36px;
     }
   }
+  .contact_btn {
+    border: 2px solid $yellow;
+    padding: 3px;
+    width: 230px;
+    margin: 0 auto;
+    display: block;
+
+    p {
+      margin-bottom: 0px;
+      font-size: 18px;
+      line-height: 38px;
+      color: $brown;
+      border: 1px solid $yellow;
+    }
+  }
 }
 
 
+
+
+
+
+.footer {
+  height: 300px;
+  width: 100%;
+  background-color: $brown;
+  &_inner {
+    height: 300px;
+    display: flex;
+    align-items: center;
+  }
+  &_logo {
+    width: 90px;
+    height: auto;
+  }
+  &_list {
+    display: flex;
+  }
+}
