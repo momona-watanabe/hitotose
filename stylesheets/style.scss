@@ -112,6 +112,10 @@ header {
 #concept {
   width: 100%;
   padding: 100px;
+  @media screen and (max-width: 1050px){
+    padding: 100px 40px;
+  }
+  
 
   .contents_block {
     max-width: 1050px;
@@ -120,13 +124,24 @@ header {
 
   .concept_list:nth-child(odd) .concept_img{
     justify-content: right;
+    @media screen and (max-width: 780px){
+      justify-content: center;
+      margin: 0 auto;
+      width: 210px;
+    }
   }
   .concept_list:nth-child(even) .concept_img{
     justify-content: left;
+    @media screen and (max-width: 780px){
+      justify-content: center;
+    }
   }
   .concept_list:nth-child(2) {
     display: flex;
     flex-direction: row-reverse;
+    @media screen and (max-width: 780px){
+      display: block;
+    }
   }
 
   .concept_list {
@@ -136,12 +151,19 @@ header {
       writing-mode: vertical-rl;
       margin: 0 auto;
       line-height: 48px;
+      @media screen and (max-width: 780px){
+        line-height: 38px;
+      }
     }
     .letter1 {
       margin: 25px auto 55px auto;
     }
     .letter2 {
       padding-right: 100px;
+      margin-bottom: 55px;
+      @media screen and (max-width: 1050px){
+        padding-right: 0px;
+      }
     }
     span {
       display: block;
@@ -153,6 +175,7 @@ header {
     img{
       height: 315px;
       width: auto;
+      object-fit: cover;
     }
     .concept_img_left {
       margin-right: 25px;
@@ -173,17 +196,25 @@ header {
       font-size: 32px;
       font-weight: 400;
       letter-spacing: 1.5px;
+      white-space: nowrap;
     }
     img {
       width: 215px;
       height: auto;
-      margin: 0 20px
+      margin: 0 20px;
+      @media screen and (max-width: 780px){
+        display: none;
+      }
     }
   }
 
   .info_list {
     display: flex;
     align-items: center;
+    @media screen and (max-width: 1050px){
+      display: block;
+      padding: 100px;
+    }
     h3 {
       font-size: 32px;
       letter-spacing: 1.5px;
@@ -197,7 +228,18 @@ header {
     .info_text_block,.info_img_block {
       width: 50%;
       text-align: center;
+      @media screen and (max-width: 1050px){
+        width: 100%;
+        margin: 0 auto;
+      }
     }
+/*
+    .info_img_block {
+      @media screen and (max-width: 1050px){
+        margin: 0 auto;
+      }
+    }*/
+
     .info_text_icon {
       width: 70px;
       height: auto;
@@ -239,6 +281,13 @@ header {
   .contact_background {
     width: 100%;
     height: auto;
+    img {
+      @media screen and (max-width: 1050px){
+        height: 900px;
+        object-fit: cover;
+      }
+    }
+
   }
   .contact_message {
     position: absolute;
@@ -247,6 +296,10 @@ header {
     margin-left: -140px;
     margin-top: -280px;
     text-align: center;
+    @media screen and (max-width: 1050px){
+      margin-top: -310px;
+    }
+
     img {
       width: 105px;
       height: auto;
@@ -306,8 +359,7 @@ header {
   &_logo {
     width: 90px;
     height: auto;
-    position: absolute;
-    left: 10%;
+    margin-right: 50px;
   }
   &_list {
     display: flex;
