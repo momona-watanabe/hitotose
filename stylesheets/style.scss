@@ -85,6 +85,9 @@ header {
         border: .5px solid $white;
         margin-left: 6px;
       }
+      @media screen and (max-width: 830px){
+        display: none;
+      }
     }//header_menu
   
   }//header_inner
@@ -104,6 +107,11 @@ header {
     left: 50%;
     width: 130px;
     margin: -65px 0 0 -65px;
+
+    @media screen and (max-width: 1050px){
+      width: 100px;
+      margin: -50px 0 0 -50px;
+    }
   }
 }
 
@@ -115,8 +123,10 @@ header {
   @media screen and (max-width: 1050px){
     padding: 100px 40px;
   }
+  @media screen and (max-width: 450px){
+    padding: 100px 15px 10px 15px;
+  }
   
-
   .contents_block {
     max-width: 1050px;
     margin: 0 auto;
@@ -128,6 +138,9 @@ header {
       justify-content: center;
       margin: 0 auto;
       width: 210px;
+    }
+    @media screen and (max-width: 450px){
+      width: 160px;
     }
   }
   .concept_list:nth-child(even) .concept_img{
@@ -151,12 +164,20 @@ header {
       writing-mode: vertical-rl;
       margin: 0 auto;
       line-height: 48px;
+      p {
+        @media screen and (max-width: 550px){
+          margin: 30px auto;
+        }
+      }
       @media screen and (max-width: 780px){
         line-height: 38px;
       }
     }
     .letter1 {
       margin: 25px auto 55px auto;
+        @media screen and (max-width: 550px){
+          display: flex;
+      }
     }
     .letter2 {
       padding-right: 100px;
@@ -168,6 +189,9 @@ header {
     span {
       display: block;
       width: 50px;
+      @media screen and (max-width: 550px){
+        display: none;
+      }
     }
     .concept_img {
       display: flex;
@@ -192,17 +216,26 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
+    @media screen and (max-width: 830px){
+      margin-bottom: 40px;
+    }
     h2 {
       font-size: 32px;
       font-weight: 400;
       letter-spacing: 1.5px;
       white-space: nowrap;
+      @media screen and (max-width: 830px){
+        font-size: 28px;
+      }
+      @media screen and (max-width: 450px){
+        font-size: 26px;
+      }
     }
     img {
       width: 215px;
       height: auto;
       margin: 0 20px;
-      @media screen and (max-width: 780px){
+      @media screen and (max-width: 830px){
         display: none;
       }
     }
@@ -215,15 +248,24 @@ header {
       display: block;
       padding: 100px;
     }
+    @media screen and (max-width: 550px){
+      padding: 50px 0px;
+    }
     h3 {
       font-size: 32px;
       letter-spacing: 1.5px;
       font-weight: 500;
       margin-bottom: 40px;
+      @media screen and (max-width: 450px){
+        font-size: 28px;
+      }
     }
     p {
       line-height: 36px;
       margin-bottom: 40px;
+      @media screen and (max-width: 450px){
+        font-size: 14.5px;
+      }
     }
     .info_text_block,.info_img_block {
       width: 50%;
@@ -233,20 +275,12 @@ header {
         margin: 0 auto;
       }
     }
-/*
-    .info_img_block {
-      @media screen and (max-width: 1050px){
-        margin: 0 auto;
-      }
-    }*/
-
     .info_text_icon {
       width: 70px;
       height: auto;
       margin: 20px auto;
-    }
-    
-  }
+    }  
+  }//info_list
 
   .info_list:nth-child(2) {
     background-color: $brown;
@@ -259,6 +293,9 @@ header {
     flex-direction: row-reverse;
     background-color: $beige;
     color: $font_black;
+    .info_text_icon {
+      width: 90px;
+    }
     a {
       color: $navy;
     }
@@ -343,11 +380,24 @@ header {
   height: 300px;
   width: 100%;
   background-color: $brown;
+  @media screen and (max-width: 830px){
+    height: 120px;
+  }
   &_inner {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 830px){
+      height: 120px;
+      justify-content: unset;
+    }
+  }
+  &_menu {
+    white-space: nowrap;
+    @media screen and (max-width: 830px){
+      display: none;
+    }
   }
   &_line {
     display: block;
@@ -360,6 +410,10 @@ header {
     width: 90px;
     height: auto;
     margin-right: 50px;
+    @media screen and (max-width: 830px){
+    width: 70px;
+    margin: 0 40px;
+    }
   }
   &_list {
     display: flex;
