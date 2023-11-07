@@ -41,9 +41,9 @@ header {
   width: 100%;
   background-color: #723517;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 830px) {
   header {
-    height: 50px;
+    height: 60px;
   }
 }
 header .header_inner {
