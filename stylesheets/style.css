@@ -6,6 +6,12 @@ body {
   font-weight: 600;
   font-style: normal;
 }
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
 
 ul {
   list-style: none;
@@ -22,6 +28,11 @@ a {
 
 p {
   letter-spacing: 1.7px;
+}
+@media screen and (max-width: 450px) {
+  p {
+    letter-spacing: 1.5px;
+  }
 }
 
 /*!header*/
@@ -150,6 +161,7 @@ header .header_inner .header_menu span {
   writing-mode: vertical-rl;
   margin: 0 auto;
   line-height: 48px;
+  white-space: nowrap;
 }
 @media screen and (max-width: 550px) {
   #concept .concept_list .concept_letter p {
@@ -266,11 +278,6 @@ header .header_inner .header_menu span {
 #information .info_list p {
   line-height: 36px;
   margin-bottom: 40px;
-}
-@media screen and (max-width: 450px) {
-  #information .info_list p {
-    font-size: 14.5px;
-  }
 }
 #information .info_list .info_text_block, #information .info_list .info_img_block {
   width: 50%;
