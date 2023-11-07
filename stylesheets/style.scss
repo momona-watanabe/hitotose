@@ -131,7 +131,7 @@ header {
     padding: 100px 40px;
   }
   @media screen and (max-width: 450px){
-    padding: 100px 15px 10px 15px;
+    padding: 10px 15px 10px 15px;
   }
   
   .contents_block {
@@ -271,6 +271,9 @@ header {
     p {
       line-height: 36px;
       margin-bottom: 40px;
+      @media screen and (max-width: 450px){
+        font-size: 13px;
+      }
     }
     .info_text_block,.info_img_block {
       width: 50%;

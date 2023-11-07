@@ -114,7 +114,7 @@ header .header_inner .header_menu span {
 }
 @media screen and (max-width: 450px) {
   #concept {
-    padding: 100px 15px 10px 15px;
+    padding: 10px 15px 10px 15px;
   }
 }
 #concept .contents_block {
@@ -278,6 +278,11 @@ header .header_inner .header_menu span {
 #information .info_list p {
   line-height: 36px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 450px) {
+  #information .info_list p {
+    font-size: 13px;
+  }
 }
 #information .info_list .info_text_block, #information .info_list .info_img_block {
   width: 50%;
