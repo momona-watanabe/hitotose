@@ -112,7 +112,7 @@ header .header_inner .header_menu span {
   width: 130px;
   margin: -65px 0 0 -65px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
   #firstview .firstview_logo {
     width: 100px;
     margin: -50px 0 0 -50px;
@@ -124,7 +124,7 @@ header .header_inner .header_menu span {
   width: 100%;
   padding: 100px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
   #concept {
     padding: 100px 40px;
   }
@@ -141,7 +141,7 @@ header .header_inner .header_menu span {
 #concept .concept_list:nth-child(odd) .concept_img {
   justify-content: right;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 830px) {
   #concept .concept_list:nth-child(odd) .concept_img {
     justify-content: center;
     margin: 0 auto;
@@ -156,7 +156,7 @@ header .header_inner .header_menu span {
 #concept .concept_list:nth-child(even) .concept_img {
   justify-content: left;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 830px) {
   #concept .concept_list:nth-child(even) .concept_img {
     justify-content: center;
   }
@@ -165,7 +165,7 @@ header .header_inner .header_menu span {
   display: flex;
   flex-direction: row-reverse;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 830px) {
   #concept .concept_list:nth-child(2) {
     display: block;
   }
@@ -180,7 +180,7 @@ header .header_inner .header_menu span {
   line-height: 48px;
   white-space: nowrap;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 830px) {
   #concept .concept_list .concept_letter {
     line-height: 38px;
   }
@@ -202,7 +202,7 @@ header .header_inner .header_menu span {
   padding-right: 100px;
   margin-bottom: 55px;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
   #concept .concept_list .letter2 {
     padding-right: 0px;
   }
@@ -271,7 +271,7 @@ header .header_inner .header_menu span {
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
   #information .info_list {
     display: block;
     padding: 100px;
@@ -301,7 +301,7 @@ header .header_inner .header_menu span {
   width: 50%;
   text-align: center;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
   #information .info_list .info_text_block, #information .info_list .info_img_block {
     width: 100%;
     margin: 0 auto;
@@ -346,7 +346,7 @@ header .header_inner .header_menu span {
   width: 100%;
   height: auto;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
   #contact .contact_background img {
     height: 900px;
     -o-object-fit: cover;
