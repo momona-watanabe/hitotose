@@ -18,10 +18,6 @@ $("#g-nav a").click(function () {
 
 
 
-
-
-
-
 //slick
 $('.slider').slick({
   fade:true,
@@ -36,7 +32,6 @@ $('.slider').slick({
   pauseOnHover:false,
   pauseOnDotsHover:false,
 });
-
 
 
 
