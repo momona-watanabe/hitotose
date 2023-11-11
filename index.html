@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>旅館ひととせ</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="./stylesheets/style.css" />
   <script>
     (function(d) {
@@ -95,9 +96,15 @@
 
 
       <div id="firstview">
-        <div class="firstview_img">
-          <img src="./images/firstview.jpg" >
-        </div>
+        <ul class="slider">
+          <li class="slider-item"><img src="./images/firstview1.jpg"></li>
+          <li class="slider-item"><img src="./images/firstview2.jpg"></li>
+          <li class="slider-item"><img src="./images/firstview3.jpg"></li>
+          <li class="slider-item"><img src="./images/firstview4.jpg"></li>
+        </ul>
+
+        <div class="scroll_down scroll_down1"><span></span></div>
+
         <h1 class="firstview_logo">
           <img src="./images/logo1.png" alt="ひととせ旅館ロゴ">
         </h1>
@@ -175,20 +182,21 @@
 
           </div><!--/contents_block-->
         </div><!--/contents_inner-->
+        <div class="scroll_down scroll_down2"><span></span></div>
       </div><!--/concept-->
 
 
       <div id="information">
         <div class="contents_inner">
           <div class="contents_block">
-            <div class="info_title">
+            <div class="info_title blurTrigger blur">
               <img src="./images/info_illust1.png">
               <h2>ひととせのおもてなし</h2>
               <img src="./images/info_illust2.png">
             </div><!--/info_title-->
 
             <div class="info_list">
-              <div class="info_text_block">
+              <div class="info_text_block blurTrigger blur">
                 <img src="./images/info_illust3.png" class="info_text_icon">
                 <h3>料理</h3>
                 <p>
@@ -206,7 +214,7 @@
             </div><!--/info_list-->
 
             <div class="info_list">
-              <div class="info_text_block">
+              <div class="info_text_block blurTrigger blur">
                 <div>
                   <img src="./images/info_illust4.png" class="info_text_icon">
                   <h3>客室</h3>
@@ -228,7 +236,7 @@
             </div><!--/info_list-->
 
             <div class="info_list">
-              <div class="info_text_block">
+              <div class="info_text_block blurTrigger blur">
                 <img src="./images/info_illust5.png" class="info_text_icon">
                 <h3>温泉</h3>
                 <p>
@@ -246,6 +254,7 @@
             </div><!--/info_list-->
           </div><!--/contents_block-->
         </div><!--/contents_inner-->
+        <div class="scroll_down scroll_down1"><span></span></div>
       </div><!--/information-->
 
 
@@ -257,8 +266,8 @@
           </div><!--/contact_background-->
           <div class="contact_message">
             <img src="./images/contact_illust1.png" alt="">
-            <h4>流れる季節 うつりかわる色</h4>
-            <p>
+            <h4 class="blurTrigger blur">流れる季節 うつりかわる色</h4>
+            <p class="blurTrigger blur">
               ひととせ旅館は一年を通して日本の
               <br>
               四季を感じていただける場所です。
@@ -269,7 +278,7 @@
               <br>
               花や新緑の匂いを感じる露天風呂
             </p>
-            <p>
+            <p class="blurTrigger blur">
               日常から離れ どの季節に訪れても
               <br>
               特別なひとときをお届けします。
@@ -348,12 +357,14 @@
       </footer>
 
 
+
     </div><!--/wrap_inner-->
   </div><!--/wrapper-->
 
 
-
+  
   <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
