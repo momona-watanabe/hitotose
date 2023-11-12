@@ -638,4 +638,181 @@ header .header_inner .header_menu span {
 }
 .blurTrigger {
   opacity: 0;
+}
+
+/*========= information ボタンアニメーション ===============*/
+.btn_anime {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.3s;
+  transition-delay: 0.7s;
+  /*横線の設定*/
+}
+.btn_anime::before, .btn_anime::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background: #e2bd6a;
+  transition: all 0.2s linear;
+}
+.btn_anime span {
+  display: block;
+  /*縦線の設定*/
+}
+.btn_anime span::before, .btn_anime span::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background: #e2bd6a;
+  transition: all 0.2s linear;
+}
+
+.btn_anime:hover::before,
+.btn_anime:hover::after {
+  width: 100%;
+}
+
+.btn_anime:hover span::before,
+.btn_anime:hover span::after {
+  height: 100%;
+}
+
+/*左下から右下へ伸びる横線*/
+.bordercircle::after {
+  left: 0;
+  bottom: 0;
+}
+
+/*右下から上へ伸びる縦線*/
+.bordercircle span::after {
+  right: 0;
+  bottom: 0;
+  transition-delay: 0.2s;
+}
+
+/*右上から左上へ伸びる横線*/
+.bordercircle::before {
+  right: 0;
+  top: 0;
+  transition-delay: 0.4s;
+}
+
+/*左上から左下へ伸びる横線*/
+.bordercircle span::before {
+  left: 0;
+  top: 0;
+  transition-delay: 0.6s;
+}
+
+/*========= ローディング ===============*/
+#splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #723517;
+  z-index: 999999;
+}
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+
+body {
+  background: #723517;
+}
+body.appear {
+  background: #fff; /*画面を開いた後の背景色*/
+}
+
+.splashbg1,
+.splashbg2 {
+  display: none;
+}
+
+body.appear .splashbg1,
+body.appear .splashbg2 {
+  display: block;
+}
+
+/*上に消えるエリア*/
+body.appear .splashbg1 {
+  animation-name: PageAnime;
+  animation-duration: 1.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  content: "";
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  bottom: 50%;
+  left: 0;
+  transform: scaleY(1);
+  background-color: #723517;
+}
+
+@keyframes PageAnime {
+  0% {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+  100% {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+}
+/*下に消えるエリア*/
+body.appear .splashbg2 {
+  animation-name: PageAnime2;
+  animation-duration: 1.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  content: "";
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  top: 50%;
+  left: 0;
+  transform: scaleY(1);
+  background-color: #723517;
+}
+
+@keyframes PageAnime2 {
+  0% {
+    transform-origin: bottom;
+    transform: scaleY(1);
+  }
+  100% {
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+}
+#container {
+  opacity: 0;
+}
+
+body.appear #container {
+  animation-name: PageAnimeAppear;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes PageAnimeAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
