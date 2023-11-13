@@ -62,7 +62,7 @@ $(window).scroll(function (){
 
 //loading
 $(window).on('load',function(){
-  $("#splash_logo").delay(1200).fadeOut('slow');
+  $("#splash_logo").delay(1600).fadeOut('slow');
   $("#splash").delay(1500).fadeOut('slow',function(){
   $('body').addClass('appear');
   });
