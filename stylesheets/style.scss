@@ -89,6 +89,7 @@ header {
       }
       a {
         display: inline-block;
+        overflow: hidden;
       }
       p{
         color: $white;
@@ -681,6 +682,7 @@ header {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
+  margin-bottom: 40px;
   text-decoration: none;
   outline: none;
   transition: all .3s;
@@ -710,6 +712,16 @@ header {
   }
   }
 }
+
+#information .info_list:nth-child(3) {
+  a,span{
+    &::before,&::after{
+    background: $navy;
+  }
+}
+}
+
+
 
 .btn_anime:hover::before,
 .btn_anime:hover::after{
@@ -753,9 +765,52 @@ header {
 
 
 
+/*========= ローディング時ロゴ　square_anime ===============*/
+$square_weight:1.4px;
 
+.square{
 
+  background-image: 
+    linear-gradient(0deg, $white, $white),
+    linear-gradient(0deg, $white, $white),
+    linear-gradient(0deg, $white, $white),
+    linear-gradient(0deg, $white, $white);
 
+  background-repeat: no-repeat;
+
+  background-size: $square_weight 100%, 100% $square_weight, $square_weight 100%, 100% $square_weight;
+  background-position: left bottom, left top, right top, right bottom;
+
+  animation: square_anime 1.1s linear forwards;
+}
+
+@keyframes square_anime{
+  0%{
+    background-size: 
+    $square_weight 0, 0 $square_weight,
+    $square_weight 0, 0 $square_weight; 
+  }
+  25%{
+    background-size: 
+    $square_weight 100%, 0 $square_weight,
+    $square_weight 0, 0 $square_weight;
+  }
+  50%{
+    background-size: 
+    $square_weight 100%, 100% $square_weight,
+    $square_weight 0, 0 $square_weight;
+  }
+  75%{
+    background-size: 
+    $square_weight 100%, 100% $square_weight,
+    $square_weight 100%, 0 $square_weight;
+  }
+  100%{
+    background-size: 
+    $square_weight 100%, 100% $square_weight,
+    $square_weight 100%, 100% $square_weight;
+  }
+}
 
 
 
@@ -772,7 +827,9 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
+    width: 130px;
+    height: 130px;
+    padding: 12px 11px 17px 18px;
   }
 }
 
@@ -870,4 +927,72 @@ body.appear #container{
 	100% {
 	opacity: 1;
 }
+}
+
+
+
+
+
+
+/*========= header_list　ホバー時アニメーション ===============*/
+.header_list a:hover span{
+  animation: hover_line 1s ease-in-out forwards;
+}
+
+@keyframes hover_line {
+
+0% {
+  opacity: 1;
+  transform: translateY(0);
+}
+49% {
+  opacity: 1;
+  transform: translateY(100%);
+}
+49.5% {
+  opacity: 0;
+  transform: translateY(100%);
+}
+50.5% {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+51% {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+
+
+
+
+.info_img_block {
+  position: relative;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.info_img_before {
+  opacity: 1;
+  transition: all 1s;
+}
+
+.info_img_after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.info_img_block:hover .info_img_after{
+  opacity: 1;
+}
+.info_img_block:hover .info_img_before{
+  opacity: 0;
 }
