@@ -498,6 +498,7 @@ header {
 
 /*!ナビゲーション*/
 #g-nav {
+  transform: translate3d(0,0,100px);
   &.panelactive{
     position:fixed;
     z-index: 999;
@@ -614,6 +615,7 @@ header {
     animation: scroll_down 2.4s ease-in-out infinite;
     opacity: 0;
     z-index: 100;
+    transform: translate3d(10px, 10px, 10px);
   }
 }
 
