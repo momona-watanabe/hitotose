@@ -13,6 +13,11 @@ body {
   }
 }
 
+body.active {
+  height: 100%;
+  overflow: hidden;
+}
+
 ul{
   list-style: none;
   margin-block-start: 0em;
@@ -494,24 +499,7 @@ header {
 
 
 
-#g-nav {
-  overflow: scroll;
-  /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
-  -ms-overflow-style: none;
-  /*Firefoxへの対応*/
-  scrollbar-width: none;
-}
-
-/*Google Chrome、Safariへの対応*/
-#g-nav::-webkit-scrollbar{
-  display: none;
-}
-
-
-
 /*!ナビゲーション*/
-
-
 #g-nav {
   &.panelactive{
     position:fixed;
