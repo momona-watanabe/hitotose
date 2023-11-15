@@ -490,6 +490,19 @@ header .header_inner .header_menu span {
   width: 35%;
 }
 
+#g-nav {
+  overflow: scroll;
+  /*IE(Internet Explorer)・Microsoft Edgeへの対応*/
+  -ms-overflow-style: none;
+  /*Firefoxへの対応*/
+  scrollbar-width: none;
+}
+
+/*Google Chrome、Safariへの対応*/
+#g-nav::-webkit-scrollbar {
+  display: none;
+}
+
 /*!ナビゲーション*/
 #g-nav.panelactive {
   position: fixed;
