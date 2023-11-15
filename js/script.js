@@ -2,9 +2,10 @@
 
 //openbtn
 $(".openbtn").click(function () {
-	$(this).toggleClass('active');
+　　　　　　　　$(this).toggleClass('active');
     $("#g-nav").toggleClass('panelactive');
     $(".circle-bg").toggleClass('circleactive');
+　　　　　　　　$("body").toggleClass("active");
 });
 
 $("#g-nav a").click(function () {
