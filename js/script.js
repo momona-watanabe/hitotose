@@ -71,3 +71,14 @@ $(window).on('load',function(){
   $('.splashbg1').on('animationend', function() { 
   });
   });
+
+
+
+
+
+$('#page-link a[href*="#"]').click(function () {
+  var elmHash = $(this).attr('href'); 
+  var pos = $(elmHash).offset().top;	
+  $('body,html').animate({scrollTop: pos}, 700); 
+  return false;
+  });
