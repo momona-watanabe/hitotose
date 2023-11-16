@@ -12,6 +12,7 @@ $("#g-nav a").click(function () {
     $(".openbtn").removeClass('active');
     $("#g-nav").removeClass('panelactive');
     $(".circle-bg").removeClass('circleactive');
+    $("body").removeClass("active");
 });
 
 
